@@ -1,17 +1,18 @@
 ---
 abstract: 'handling and comparing dpkg-style version numbers'
 author:
-  - "Don Armstrong <don@donarmstrong.com>, Colin Watson\n<cjwatson@debian.org> and Raphaël Hertzog <hertzog@debian.org>, based on\nthe implementation in C<dpkg/lib/vercmp.c> by Ian Jackson and others."
+  - "Don Armstrong <don@donarmstrong.com>, Colin Watson\n<cjwatson@debian.org> and RaphaÃ«l Hertzog <hertzog@debian.org>, based on\nthe implementation in C<dpkg/lib/vercmp.c> by Ian Jackson and others."
 build_requires:
   Test::More: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3603'
+  Module::Build: 0.38
+dynamic_config: 1
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
 keywords:
   - debian
   - perl
   - versions
-license: gpl
+license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -19,11 +20,11 @@ name: Debian-Dpkg-Version
 provides:
   Debian::Dpkg::Version:
     file: lib/Debian/Dpkg/Version.pm
-    version: v1.15.5.6
+    version: v1.15.5.6.1
 requires:
   Carp: 0
 resources:
   bugtracker: http://github.com/jozef/Debian-Dpkg-Version/issues
-  license: http://opensource.org/licenses/gpl-license.php
+  license: http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
   repository: git://github.com/jozef/Debian-Dpkg-Version.git
-version: v1.15.5.6
+version: v1.15.5.6.1
